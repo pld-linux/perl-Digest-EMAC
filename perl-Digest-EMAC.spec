@@ -8,12 +8,12 @@
 Summary:	Digest::EMAC - encrypted MAC (formerly known as Double MAC)
 Summary(pl):	Digest::EMAC - szyfrowany MAC (wcze¶niej znany jako podwójny MAC)
 Name:		perl-Digest-EMAC
-Version:	1.1
+Version:	1.2
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4f39b5805765f504f3106674fad92086
+# Source0-md5:	b794a64554dc1ea9b3714e8d6825ffd6
 BuildRequires:	perl-Crypt-CBC >= 2.08
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-devel >= 1:5.8.0
