@@ -16,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	4f39b5805765f504f3106674fad92086
 BuildRequires:	perl-Crypt-CBC >= 2.08
 BuildRequires:	perl-MIME-Base64
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Crypt-CBC >= 2.08
 Obsoletes:	perl-Digest-DMAC
