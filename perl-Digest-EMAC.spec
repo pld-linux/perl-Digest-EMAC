@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Digest
 %define	pnam	EMAC
-Summary:	Digest::EMAC - Encrypted MAC (formerly known as Double MAC)
+Summary:	Digest::EMAC - encrypted MAC (formerly known as Double MAC)
 Summary(pl):	Digest::EMAC - szyfrowany MAC (wcze¶niej znany jako podwójny MAC)
 Name:		perl-Digest-EMAC
 Version:	1.1
