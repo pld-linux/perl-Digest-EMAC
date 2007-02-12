@@ -6,7 +6,7 @@
 %define		pdir	Digest
 %define		pnam	EMAC
 Summary:	Digest::EMAC - encrypted MAC (formerly known as Double MAC)
-Summary(pl):	Digest::EMAC - szyfrowany MAC (wcze¶niej znany jako podwójny MAC)
+Summary(pl.UTF-8):   Digest::EMAC - szyfrowany MAC (wczeÅ›niej znany jako podwÃ³jny MAC)
 Name:		perl-Digest-EMAC
 Version:	1.2
 Release:	1
@@ -29,12 +29,12 @@ Unlike HMAC, which reuses an existing one-way hash function, such as
 MD5, SHA-1 or RIPEMD-160, EMAC reuses an existing block cipher to
 produce a secure message authentication code (MAC).
 
-%description -l pl
+%description -l pl.UTF-8
 EMAC to jest Encrypted MAC (szyfrowany MAC), poprzednio znany jako
-Double MAC (DMAC - podwójny MAC). W przeciwieñstwie do HMAC, który
-wykorzystuje istniej±c± jednokierunkow± funkcjê mieszaj±c±, tak± jak
-MD5, SHA-1 czy RIPEMD-160, EMAC u¿ywa istniej±cego szyfru blokowego
-do stworzenia bezpiecznego kodu uwierzytelniaj±cego wiadomo¶æ
+Double MAC (DMAC - podwÃ³jny MAC). W przeciwieÅ„stwie do HMAC, ktÃ³ry
+wykorzystuje istniejÄ…cÄ… jednokierunkowÄ… funkcjÄ™ mieszajÄ…cÄ…, takÄ… jak
+MD5, SHA-1 czy RIPEMD-160, EMAC uÅ¼ywa istniejÄ…cego szyfru blokowego
+do stworzenia bezpiecznego kodu uwierzytelniajÄ…cego wiadomoÅ›Ä‡
 (Message Authentication Code - MAC).
 
 %prep
