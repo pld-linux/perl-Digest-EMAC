@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Digest
 %define		pnam	EMAC
+%include	/usr/lib/rpm/macros.perl
 Summary:	Digest::EMAC - encrypted MAC (formerly known as Double MAC)
 Summary(pl.UTF-8):	Digest::EMAC - szyfrowany MAC (wcześniej znany jako podwójny MAC)
 Name:		perl-Digest-EMAC
@@ -14,6 +14,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b794a64554dc1ea9b3714e8d6825ffd6
+URL:		http://search.cpan.org/dist/Digest-EMAC/
 BuildRequires:	perl-Crypt-CBC >= 2.08
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -33,9 +34,9 @@ produce a secure message authentication code (MAC).
 EMAC to jest Encrypted MAC (szyfrowany MAC), poprzednio znany jako
 Double MAC (DMAC - podwójny MAC). W przeciwieństwie do HMAC, który
 wykorzystuje istniejącą jednokierunkową funkcję mieszającą, taką jak
-MD5, SHA-1 czy RIPEMD-160, EMAC używa istniejącego szyfru blokowego
-do stworzenia bezpiecznego kodu uwierzytelniającego wiadomość
-(Message Authentication Code - MAC).
+MD5, SHA-1 czy RIPEMD-160, EMAC używa istniejącego szyfru blokowego do
+stworzenia bezpiecznego kodu uwierzytelniającego wiadomość (Message
+Authentication Code - MAC).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -55,7 +56,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
